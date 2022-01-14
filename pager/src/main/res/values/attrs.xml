@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="PagerIndicatorView">
+        <!-- View pager height -->
         <attr name="pagerHeight" format="dimension" />
+        <!-- Whether the pager should support auto scrolling or not "The view must observe your life cycle" -->
         <attr name="pagerScrollAuto" format="boolean" />
+        <!-- Auto scrolling duration -->
         <attr name="pagerScrollDuration" format="integer" />
+        <!-- Vertical margin between the ViewPager and index indicator -->
         <attr name="indicatorMarginTop" format="dimension" />
+        <!-- Indicator shape [circle, rectangle] or custom to add your own drawables -->
         <attr name="indicatorShape" format="enum">
             <enum name="circle" value="0" />
             <enum name="rectangle" value="1" />
             <enum name="custom" value="2" />
         </attr>
+        <!-- Indicator image scale type -->
         <attr name="indicatorItemScaleType" format="enum">
             <enum name="center" value="0" />
             <enum name="centerInside" value="1" />
@@ -17,17 +23,29 @@
             <enum name="fitCenter" value="3" />
             <enum name="fitXY" value="4" />
         </attr>
+        <!-- Indicator selected item color tint -->
         <attr name="indicatorColorSelected" format="color" />
+        <!-- Indicator unselected item color tint -->
         <attr name="indicatorColorUnselected" format="color" />
+        <!-- Indicator view background color -->
         <attr name="indicatorColorBackground" format="color" />
+        <!-- Indicator view top padding -->
         <attr name="indicatorPaddingTop" format="dimension" />
+        <!-- Indicator view bottom padding -->
         <attr name="indicatorPaddingBottom" format="dimension" />
+        <!-- Indicator view start padding -->
         <attr name="indicatorPaddingStart" format="dimension" />
+        <!-- Indicator view end padding -->
         <attr name="indicatorPaddingEnd" format="dimension" />
+        <!-- Indicator item width -->
         <attr name="indicatorItemWidth" format="dimension" />
+        <!-- Indicator item height -->
         <attr name="indicatorItemHeight" format="dimension" />
+        <!-- Indicator items inner margin -->
         <attr name="indicatorItemMargin" format="dimension" />
+        <!-- Indicator item custom selected image drawable -->
         <attr name="indicatorCustomSelected" format="reference" />
+        <!-- Indicator item custom unselected image drawable -->
         <attr name="indicatorCustomUnelected" format="reference" />
     </declare-styleable>
 </resources>
