@@ -5,11 +5,6 @@
         <attr name="pagerScrollAuto" format="boolean" />
         <attr name="pagerScrollDuration" format="integer" />
         <attr name="indicatorMarginTop" format="dimension" />
-        <attr name="indicatorAlignment" format="enum">
-            <enum name="start" value="0" />
-            <enum name="center" value="1" />
-            <enum name="end" value="2" />
-        </attr>
         <attr name="indicatorShape" format="enum">
             <enum name="circle" value="0" />
             <enum name="square" value="1" />

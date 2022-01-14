@@ -8,6 +8,4 @@ object Constants {
 
 enum class IndicatorShape { CIRCLE, SQUARE, CUSTOM }
 
-enum class IndicatorAlignment { START, CENTER, END }
-
 enum class IndicatorScaleType { CENTER, CENTER_INSIDE, CENTER_CROP, FIT_CENTER, FIT_XY }

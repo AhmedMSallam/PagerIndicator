@@ -57,6 +57,7 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
      */
     private fun initView() {
         orientation = VERTICAL
+        gravity = Gravity.CENTER
 
     }
 
@@ -89,16 +90,10 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
         val topMargin = arr.getDimensionPixelSize(
             R.styleable.PagerIndicatorView_indicatorMarginTop, Constants.INDICATOR_TOP_MARGIN
         )
-        val alignment = arr.getInt(R.styleable.PagerIndicatorView_indicatorAlignment, 0)
         mIndicatorView = IndicatorView(context)
         mIndicatorView.initializeView(arr)
         mIndicatorView.layoutParams = (mIndicatorView.layoutParams as LayoutParams).apply {
             updateMargins(top = topMargin)
-            gravity = when (alignment) {
-                IndicatorAlignment.START.ordinal -> Gravity.START
-                IndicatorAlignment.CENTER.ordinal -> Gravity.CENTER
-                else -> Gravity.END
-            }
         }
         addView(mIndicatorView)
     }

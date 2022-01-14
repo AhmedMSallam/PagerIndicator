@@ -10,7 +10,6 @@
         android:id="@+id/pagerIndicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:indicatorAlignment="start"
         app:indicatorColorBackground="#AEFEFF"
         app:indicatorColorSelected="#072227"
         app:indicatorColorUnselected="#35858B"
