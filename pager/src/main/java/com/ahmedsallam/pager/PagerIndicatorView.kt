@@ -44,6 +44,15 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
      */
     var scrollDuration: Long = 5000L
 
+    /**
+     * Current selected index
+     */
+    var currentIndex: Int = 0
+        set(value) {
+            viewPager.setCurrentItem(value, true)
+            field = value
+        }
+
 
     init {
         val arr = context.theme.obtainStyledAttributes(attrs, R.styleable.PagerIndicatorView, 0, 0)
@@ -59,7 +68,6 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
     private fun initView() {
         orientation = VERTICAL
         gravity = Gravity.CENTER
-
     }
 
     /**
@@ -78,6 +86,7 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
         mPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
+                currentIndex = position
                 mIndicatorView.updateIndex(position)
                 mOnIndexChangeListener?.onIndexChanged(position)
             }
