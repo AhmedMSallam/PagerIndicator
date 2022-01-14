@@ -122,8 +122,9 @@ class IndicatorView(context: Context) : RecyclerView(context) {
      * Initialize pager indicator with given count
      * @param itemsCount Pager items count
      */
-    fun initializeIndicator(itemsCount: Int) {
-        mIndicatorAdapter = IndicatorAdapter(itemsCount, mIndicatorConfig)
+    fun initializeIndicator(itemsCount: Int, onIndexChangeListener: OnIndexChangeListener) {
+        mIndicatorAdapter =
+            IndicatorAdapter(itemsCount, mIndicatorConfig, onIndexChangeListener)
         adapter = mIndicatorAdapter
     }
 

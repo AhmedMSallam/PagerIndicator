@@ -29,6 +29,7 @@ class AutoScrollFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // The view must observe life cycle if you need auto scroll
         lifecycle.addObserver(binding.pagerIndicator)
         binding.pagerIndicator.setPagerAdapter(DummyAdapter())
         binding.pagerIndicator.setOnIndexChangeListener(object : OnIndexChangeListener {

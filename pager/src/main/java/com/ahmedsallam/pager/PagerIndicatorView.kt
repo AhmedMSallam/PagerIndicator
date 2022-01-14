@@ -149,7 +149,11 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
      */
     fun <T : RecyclerView.ViewHolder> setPagerAdapter(adapter: RecyclerView.Adapter<T>) {
         mPager?.adapter = adapter
-        mIndicatorView.initializeIndicator(adapter.itemCount)
+        mIndicatorView.initializeIndicator(adapter.itemCount, object : OnIndexChangeListener {
+            override fun onIndexChanged(index: Int) {
+                currentIndex = index
+            }
+        })
     }
 
 

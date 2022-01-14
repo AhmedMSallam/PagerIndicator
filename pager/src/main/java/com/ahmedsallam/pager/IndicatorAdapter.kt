@@ -15,6 +15,7 @@ import com.ahmedsallam.pager.databinding.ItemIndicatorBinding
 class IndicatorAdapter(
     private val count: Int,
     private val config: IndicatorConfig,
+    private val onIndexChanged: OnIndexChangeListener,
 ) : RecyclerView.Adapter<IndicatorAdapter.IndicatorHolder>() {
     /**
      * Current selected index
@@ -57,6 +58,7 @@ class IndicatorAdapter(
                 }
             }
         }
+        holder.itemView.setOnClickListener { onIndexChanged.onIndexChanged(position) }
     }
 
     override fun getItemCount(): Int = count
