@@ -8,7 +8,7 @@ import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.shapes.OvalShape
 import android.graphics.drawable.shapes.RectShape
 import android.widget.ImageView
-import android.widget.LinearLayout
+import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -52,9 +52,9 @@ class IndicatorView(context: Context) : RecyclerView(context) {
             arr.getColor(R.styleable.PagerIndicatorView_indicatorColorBackground, Color.TRANSPARENT)
         id = generateViewId()
         isNestedScrollingEnabled = false
-        layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.WRAP_CONTENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
+        layoutParams = LinearLayoutCompat.LayoutParams(
+            LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
+            LinearLayoutCompat.LayoutParams.WRAP_CONTENT
         ).apply {
             setPaddingRelative(start, top, end, bottom)
         }
