@@ -4,14 +4,13 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.Color
 import android.graphics.drawable.Drawable
-import android.graphics.drawable.ShapeDrawable
-import android.graphics.drawable.shapes.OvalShape
-import android.graphics.drawable.shapes.RectShape
+import android.graphics.drawable.GradientDrawable
 import android.widget.ImageView
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+
 
 /**
  * Pager indicator view
@@ -107,9 +106,15 @@ class IndicatorView(context: Context) : RecyclerView(context) {
      */
     private fun getShapeDrawable(res: Int, shape: IndicatorShape): Drawable {
         return when (shape) {
-            IndicatorShape.CIRCLE -> ShapeDrawable(OvalShape())
-            IndicatorShape.SQUARE -> ShapeDrawable(RectShape())
-            else -> ContextCompat.getDrawable(context, res)!!
+            IndicatorShape.CIRCLE -> {
+                GradientDrawable().apply { setShape(GradientDrawable.OVAL) }
+            }
+            IndicatorShape.SQUARE -> {
+                GradientDrawable().apply { setShape(GradientDrawable.RECTANGLE) }
+            }
+            else -> {
+                ContextCompat.getDrawable(context, res)!!
+            }
         }
     }
 

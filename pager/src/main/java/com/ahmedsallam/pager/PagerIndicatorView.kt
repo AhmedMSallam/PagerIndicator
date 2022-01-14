@@ -50,6 +50,7 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
         initView()
         initPager(arr)
         initIndicator(arr)
+        arr.recycle()
     }
 
     /**

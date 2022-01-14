@@ -45,14 +45,14 @@ class IndicatorAdapter(
         if (position == mCurrentIndex) {
             holder.item.apply {
                 setImageDrawable(config.itemSelected)
-                if (config.colorSelected > 0) {
+                if (config.colorSelected != 0) {
                     setColorFilter(config.colorSelected)
                 }
             }
         } else {
             holder.item.apply {
                 setImageDrawable(config.itemUnselected)
-                if (config.colorUnselected > 0) {
+                if (config.colorUnselected != 0) {
                     setColorFilter(config.colorUnselected)
                 }
             }
