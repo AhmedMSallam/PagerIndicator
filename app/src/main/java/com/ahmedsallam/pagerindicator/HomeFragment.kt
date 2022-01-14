@@ -30,6 +30,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         binding.bShape.setOnClickListener(this)
         binding.bDrawable.setOnClickListener(this)
         binding.bComplete.setOnClickListener(this)
+        binding.bAutoScroll.setOnClickListener(this)
     }
 
     override fun onDestroyView() {
@@ -48,8 +49,11 @@ class HomeFragment : Fragment(), View.OnClickListener {
             R.id.bDrawable -> {
                 HomeFragmentDirections.actionHomeFragmentToDrawableFragment()
             }
-            else -> {
+            R.id.bComplete -> {
                 HomeFragmentDirections.actionHomeFragmentToCompleteFragment()
+            }
+            else -> {
+                HomeFragmentDirections.actionHomeFragmentToAutoScrollFragment()
             }
         }
         v.findNavController().navigate(action)

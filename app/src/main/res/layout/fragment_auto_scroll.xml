@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmnts.AutoScrollFragment">
+
+    <com.ahmedsallam.pager.PagerIndicatorView
+        android:id="@+id/pagerIndicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:indicatorColorBackground="#FFD031"
+        app:indicatorColorSelected="#000000"
+        app:indicatorColorUnselected="#555557"
+        app:indicatorItemHeight="24dp"
+        app:indicatorItemMargin="16dp"
+        app:indicatorItemScaleType="fitCenter"
+        app:indicatorItemWidth="24dp"
+        app:indicatorMarginTop="16dp"
+        app:indicatorPaddingBottom="8dp"
+        app:indicatorPaddingEnd="8dp"
+        app:indicatorPaddingStart="8dp"
+        app:indicatorPaddingTop="8dp"
+        app:indicatorShape="rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagerHeight="224dp"
+        app:pagerScrollAuto="true"
+        app:pagerScrollDuration="2500" />
+</androidx.constraintlayout.widget.ConstraintLayout>

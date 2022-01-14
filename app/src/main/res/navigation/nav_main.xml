@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_homeFragment_to_completeFragment"
             app:destination="@id/completeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_autoScrollFragment"
+            app:destination="@id/autoScrollFragment" />
     </fragment>
     <fragment
         android:id="@+id/basicFragment"
@@ -43,4 +46,9 @@
         android:name="com.ahmedsallam.pagerindicator.fragmnts.CompleteFragment"
         android:label="fragment_complete"
         tools:layout="@layout/fragment_complete" />
+    <fragment
+        android:id="@+id/autoScrollFragment"
+        android:name="com.ahmedsallam.pagerindicator.fragmnts.AutoScrollFragment"
+        android:label="fragment_auto_scroll"
+        tools:layout="@layout/fragment_auto_scroll" />
 </navigation>
