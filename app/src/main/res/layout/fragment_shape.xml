@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmnts.ShapeFragment">
+
+    <com.ahmedsallam.pager.PagerIndicatorView
+        android:id="@+id/pagerIndicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:indicatorColorSelected="#FF0000"
+        app:indicatorColorUnselected="#0000FF"
+        app:indicatorItemHeight="16dp"
+        app:indicatorItemMargin="8dp"
+        app:indicatorItemWidth="16dp"
+        app:indicatorMarginTop="16dp"
+        app:indicatorShape="rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagerHeight="168dp" />
+
+    <com.ahmedsallam.pager.PagerIndicatorView
+        android:id="@+id/pagerIndicator2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:indicatorColorSelected="#000000"
+        app:indicatorColorUnselected="#555557"
+        app:indicatorItemHeight="8dp"
+        app:indicatorItemMargin="8dp"
+        app:indicatorItemWidth="16dp"
+        app:indicatorMarginTop="16dp"
+        app:indicatorShape="rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerIndicator"
+        app:pagerHeight="168dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -109,7 +109,7 @@ class IndicatorView(context: Context) : RecyclerView(context) {
             IndicatorShape.CIRCLE -> {
                 GradientDrawable().apply { setShape(GradientDrawable.OVAL) }
             }
-            IndicatorShape.SQUARE -> {
+            IndicatorShape.RECTANGLE -> {
                 GradientDrawable().apply { setShape(GradientDrawable.RECTANGLE) }
             }
             else -> {

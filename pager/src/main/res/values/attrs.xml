@@ -7,7 +7,7 @@
         <attr name="indicatorMarginTop" format="dimension" />
         <attr name="indicatorShape" format="enum">
             <enum name="circle" value="0" />
-            <enum name="square" value="1" />
+            <enum name="rectangle" value="1" />
             <enum name="custom" value="2" />
         </attr>
         <attr name="indicatorItemScaleType" format="enum">

@@ -6,6 +6,6 @@ object Constants {
     const val INDICATOR_TOP_MARGIN = 32
 }
 
-enum class IndicatorShape { CIRCLE, SQUARE, CUSTOM }
+enum class IndicatorShape { CIRCLE, RECTANGLE, CUSTOM }
 
 enum class IndicatorScaleType { CENTER, CENTER_INSIDE, CENTER_CROP, FIT_CENTER, FIT_XY }

@@ -43,7 +43,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 HomeFragmentDirections.actionHomeFragmentToBasicFragment()
             }
             R.id.bShape -> {
-                HomeFragmentDirections.actionHomeFragmentToBasicFragment()
+                HomeFragmentDirections.actionHomeFragmentToShapeFragment()
             }
             R.id.bDrawable -> {
                 HomeFragmentDirections.actionHomeFragmentToBasicFragment()
