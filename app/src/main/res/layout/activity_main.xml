@@ -6,5 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
+    <com.ahmedsallam.pager.PagerIndicatorView
+        android:id="@+id/pagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:indicatorAlignment="start"
+        app:indicatorColorBackground="#AEFEFF"
+        app:indicatorColorSelected="#072227"
+        app:indicatorColorUnselected="#35858B"
+        app:indicatorItemHeight="8dp"
+        app:indicatorItemMargin="8dp"
+        app:indicatorItemScaleType="fitCenter"
+        app:indicatorItemWidth="8dp"
+        app:indicatorMarginTop="16dp"
+        app:indicatorPaddingBottom="8dp"
+        app:indicatorPaddingStart="8dp"
+        app:indicatorPaddingEnd="8dp"
+        app:indicatorPaddingTop="8dp"
+        app:indicatorShape="circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagerHeight="156dp"
+        app:pagerScrollAuto="true"
+        app:pagerScrollDuration="5000" />
 </androidx.constraintlayout.widget.ConstraintLayout>

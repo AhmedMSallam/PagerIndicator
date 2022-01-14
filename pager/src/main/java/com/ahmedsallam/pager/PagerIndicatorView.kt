@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.Gravity
-import android.widget.LinearLayout
+import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.core.view.updateMargins
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
@@ -12,7 +12,8 @@ import androidx.viewpager2.widget.ViewPager2
 /**
  * View pager with index indicator
  */
-class PagerIndicatorView(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
+class PagerIndicatorView(context: Context, attrs: AttributeSet) :
+    LinearLayoutCompat(context, attrs) {
     /**
      * ViewPager2 instance
      */
