@@ -8,8 +8,9 @@
 
     <com.ahmedsallam.pager.PagerIndicatorView
         android:id="@+id/pagerIndicator"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
         app:indicatorColorBackground="#AEFEFF"
         app:indicatorColorSelected="#FF0000"
         app:indicatorColorUnselected="#0000FF"
@@ -23,10 +24,10 @@
         app:indicatorPaddingStart="8dp"
         app:indicatorPaddingTop="8dp"
         app:indicatorShape="square"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:pagerHeight="156dp"
         app:pagerScrollAuto="true"
         app:pagerScrollDuration="5000" />
 </androidx.constraintlayout.widget.ConstraintLayout>

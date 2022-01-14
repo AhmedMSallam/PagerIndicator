@@ -67,12 +67,14 @@ class PagerIndicatorView(context: Context, attrs: AttributeSet) :
      * @param arr Parameters container
      */
     private fun initPager(arr: TypedArray) {
-        val height = arr.getDimensionPixelSize(
-            R.styleable.PagerIndicatorView_pagerHeight, LayoutParams.MATCH_PARENT
-        )
+        val height = arr.getDimensionPixelSize(R.styleable.PagerIndicatorView_pagerHeight, 0)
         mPager = ViewPager2(context)
         mPager.id = generateViewId()
-        mPager.layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, height)
+        mPager.layoutParams = if (height > 0) {
+            LayoutParams(LayoutParams.MATCH_PARENT, height)
+        } else {
+            LayoutParams(LayoutParams.MATCH_PARENT, 0, 1f)
+        }
         mPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
