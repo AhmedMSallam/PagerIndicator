@@ -6,28 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.ahmedsallam.pager.PagerIndicatorView
-        android:id="@+id/pagerIndicator"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/purple_200"
-        app:indicatorColorBackground="#AEFEFF"
-        app:indicatorColorSelected="#FF0000"
-        app:indicatorColorUnselected="#0000FF"
-        app:indicatorItemHeight="16dp"
-        app:indicatorItemMargin="8dp"
-        app:indicatorItemScaleType="fitCenter"
-        app:indicatorItemWidth="16dp"
-        app:indicatorMarginTop="16dp"
-        app:indicatorPaddingBottom="8dp"
-        app:indicatorPaddingEnd="8dp"
-        app:indicatorPaddingStart="8dp"
-        app:indicatorPaddingTop="8dp"
-        app:indicatorShape="square"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:pagerScrollAuto="true"
-        app:pagerScrollDuration="5000" />
+        app:navGraph="@navigation/nav_main" />
+
+
+    <!--    <com.ahmedsallam.pager.PagerIndicatorView-->
+    <!--        android:id="@+id/pagerIndicator"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:background="@color/purple_200"-->
+    <!--        app:indicatorColorBackground="#AEFEFF"-->
+    <!--        app:indicatorColorSelected="#FF0000"-->
+    <!--        app:indicatorColorUnselected="#0000FF"-->
+    <!--        app:indicatorItemHeight="16dp"-->
+    <!--        app:indicatorItemMargin="8dp"-->
+    <!--        app:indicatorItemScaleType="fitCenter"-->
+    <!--        app:indicatorItemWidth="16dp"-->
+    <!--        app:indicatorMarginTop="16dp"-->
+    <!--        app:indicatorPaddingBottom="8dp"-->
+    <!--        app:indicatorPaddingEnd="8dp"-->
+    <!--        app:indicatorPaddingStart="8dp"-->
+    <!--        app:indicatorPaddingTop="8dp"-->
+    <!--        app:indicatorShape="square"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:pagerScrollAuto="true"-->
+    <!--        app:pagerScrollDuration="5000" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
