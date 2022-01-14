@@ -58,7 +58,7 @@ class IndicatorView(context: Context) : RecyclerView(context) {
         ).apply {
             setPaddingRelative(start, top, end, bottom)
         }
-        layoutManager = LinearLayoutManager(context)
+        layoutManager = LinearLayoutManager(context, HORIZONTAL, false)
         setBackgroundColor(background)
     }
 
