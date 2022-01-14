@@ -49,7 +49,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 HomeFragmentDirections.actionHomeFragmentToDrawableFragment()
             }
             else -> {
-                HomeFragmentDirections.actionHomeFragmentToBasicFragment()
+                HomeFragmentDirections.actionHomeFragmentToCompleteFragment()
             }
         }
         v.findNavController().navigate(action)
