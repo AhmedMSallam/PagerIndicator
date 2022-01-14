@@ -46,7 +46,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 HomeFragmentDirections.actionHomeFragmentToShapeFragment()
             }
             R.id.bDrawable -> {
-                HomeFragmentDirections.actionHomeFragmentToBasicFragment()
+                HomeFragmentDirections.actionHomeFragmentToDrawableFragment()
             }
             else -> {
                 HomeFragmentDirections.actionHomeFragmentToBasicFragment()

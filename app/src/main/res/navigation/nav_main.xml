@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_shapeFragment"
             app:destination="@id/shapeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drawableFragment"
+            app:destination="@id/drawableFragment" />
     </fragment>
     <fragment
         android:id="@+id/basicFragment"
@@ -27,4 +30,9 @@
         android:name="com.ahmedsallam.pagerindicator.fragmnts.ShapeFragment"
         android:label="fragment_shape"
         tools:layout="@layout/fragment_shape" />
+    <fragment
+        android:id="@+id/drawableFragment"
+        android:name="com.ahmedsallam.pagerindicator.fragmnts.DrawableFragment"
+        android:label="fragment_drawable"
+        tools:layout="@layout/fragment_drawable" />
 </navigation>
