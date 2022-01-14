@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerIndicatorView">
+        <attr name="pagerHeight" format="dimension" />
+        <attr name="pagerScrollAuto" format="boolean" />
+        <attr name="pagerScrollDuration" format="integer" />
+        <attr name="indicatorMarginTop" format="dimension" />
+        <attr name="indicatorAlignment" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="indicatorShape" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="square" value="1" />
+            <enum name="custom" value="2" />
+        </attr>
+        <attr name="indicatorItemScaleType" format="enum">
+            <enum name="center" value="0" />
+            <enum name="centerInside" value="1" />
+            <enum name="centerCrop" value="2" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitXY" value="4" />
+        </attr>
+        <attr name="indicatorColorSelected" format="color" />
+        <attr name="indicatorColorUnselected" format="color" />
+        <attr name="indicatorColorBackground" format="color" />
+        <attr name="indicatorPaddingTop" format="dimension" />
+        <attr name="indicatorPaddingBottom" format="dimension" />
+        <attr name="indicatorPaddingStart" format="dimension" />
+        <attr name="indicatorPaddingEnd" format="dimension" />
+        <attr name="indicatorItemWidth" format="dimension" />
+        <attr name="indicatorItemHeight" format="dimension" />
+        <attr name="indicatorItemMargin" format="dimension" />
+        <attr name="indicatorCustomSelected" format="reference" />
+        <attr name="indicatorCustomUnelected" format="reference" />
+    </declare-styleable>
+</resources>

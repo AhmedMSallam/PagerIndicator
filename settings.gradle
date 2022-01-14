@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PagerIndicator"
 include ':app'
+include ':pager'
